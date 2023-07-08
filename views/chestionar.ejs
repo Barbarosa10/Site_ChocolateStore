@@ -1,0 +1,21 @@
+<br><h5>Autentificat ca <%= username %>!</h5><br><br>
+<h1>Ești o persoană dependentă de ciocolată? <br> 
+    Poți afla răspunsul dacă parcurgi următorul chestionar:
+ </h1>
+ 
+<form action="/rezultat-chestionar" id="chestionar-form" method="post">
+    <% for(let i=0; i < intrebari.length; i++){ %>
+        <div class="question">
+            <p>
+                <%= intrebari[i].intrebare %>
+            </p>
+
+            <% for(let j=0; j < intrebari[i].variante.length; j++){ %>
+                <input type="radio" id = "<%= i+"_"+j %>" name = "<%= i %>" value = "<%= j %>">
+                <label> <%= intrebari[i].variante[j] %> </label><br>
+            <% } %>
+        </div>
+    <% } %>
+    <button type="submit">Submit</button>
+    <br><br><br>
+</form>

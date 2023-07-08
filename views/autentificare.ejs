@@ -1,0 +1,21 @@
+<% if(errorMessage && errorMessage == "unauthorized") {%>
+    <p style="color: red">Username sau parolă introduse greșit de prea multe ori.</p>
+<% } else { %>
+    <br><br>
+    <div class="container">
+        <h2>Autentificare</h2><br><br>
+        <form action="/verificare-autentificare"  method="post">
+            <div class="form_label">
+                <label class="label" for="username"><b>Nume: </b></label><br>
+                <input type="text" id="username" name="username" placeholder="Introdu username-ul"><br>
+                <label for="password" ><b>Parolă: </b></label><br>
+                <input type="password" id="password" name="password" placeholder="Introdu parola"><br><br>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <% if(errorMessage) {%>
+            <p style="color: red"><%= errorMessage %></p>
+        <% } %>
+    </div>
+<% } %>

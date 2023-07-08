@@ -1,0 +1,3 @@
+[{"username": "donuts", "password": "parola", "firstname": "Dănuț", "lastname": "Duciuc", "role": "admin"}, 
+ {"username": "edmund", "password": "parola", "firstname": "Emanuel", "lastname": "Strugaru", "role": "user"},
+ {"username": "cosvas", "password": "parola", "firstname": "Cosmin", "lastname": "Vasiliu", "role": "user"}]

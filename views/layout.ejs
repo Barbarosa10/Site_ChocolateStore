@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate store</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/javascript/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-list" id="navi-list">
+                <a href="/" id="acasa">Acasă</a>
+                <a href="/autentificare" id="autentificare">Autentificare</a>
+                <a href="/chestionar" id="chestionar">Chestionar</a>
+                <a href="/vizualizare_cos" id="vizualizare_cos">Coș de cumpărături</a>
+                <% if(role=="admin" ){ %>
+                    <a href="/admin" id="Admin">Admin</a>
+                <% } %>
+                <a href="/log-out" id="log-out">Log out</a>
+            </div>
+        </nav><br>
+        <h1>Magazin de ciocolată</h1>
+    </header>
+
+    <main>
+        <%- body %>
+    </main>
+
+    <footer>
+        &copy; DUCIUC CHOCO
+    </footer>
+
+</body>
+
+</html>

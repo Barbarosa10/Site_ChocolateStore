@@ -1,0 +1,19 @@
+<br><h5>Autentificat ca <%= username %>!</h5><br>
+<h1>Coș de cumpărături</h1><br>
+
+<% if(produse != undefined){ %>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nume</th>
+            <th>Preț</th>
+        </tr>
+        <% for(let i = 0; i < produse.length; i++){ %>
+            <tr>
+                <td><%= i+1 %></td>
+                <td><%= produse[i].name %></td>
+                <td><%= produse[i].price %></td>
+            </tr>
+        <% } %>
+    </table>
+<% } %>

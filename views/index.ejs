@@ -1,0 +1,32 @@
+<% var attr = ''; %>
+<% if(username != undefined){ %>
+
+    <br><h5>Autentificat ca <%= username %>!</h5><br>
+
+<% } else {%>
+    <% attr = 'disabled'; %>
+<% } %>
+
+    <br><br>
+    <a href="/creare-bd"><button <%= attr %> disabled>Creare BD</button></a>
+    <a href="/inserare-bd"><button <%= attr %> disabled>Încărcare</button></a>
+    <br><br><br>
+    <%console.log(produse)%>
+    <% if(produse != undefined){ %>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nume</th>
+                <th>Preț</th>
+                <th>Acțiune</th>
+            </tr>
+            <% for(let i = 0; i < produse.length; i++){ %>
+                <tr>
+                    <td><%= i+1 %></td>
+                    <td><%= produse[i].name %></td>
+                    <td><%= produse[i].price %></td>
+                    <td><button class="table-button" <%= attr %> onclick="addToCart(<%= produse[i].id %>)" >Adaugă în coș</button></td>
+                </tr>
+            <% } %>
+        </table>
+    <% } %>

@@ -1,0 +1,37 @@
+[
+    {
+        "intrebare": "Care este cea mai amară ciocolată?",
+        "variante": ["Pascha", "Milka", "Lindt", "Taza"],
+        "corect": 0
+    },
+
+    {
+        "intrebare": "Câtă ciocolată ar trebui sa consume o persoană pe zi?",
+        "variante": ["Foarte mult", "Mult", "Puțin", "Deloc"],
+        "corect": 3
+    },
+
+    {
+        "intrebare": "Care dintre următoarele țări este cunoscută pentru producția de ciocolată de calitate?",
+        "variante": ["Elveția", "Franța", "Belgia", "Italia"],
+        "corect": 0
+    },
+
+    {
+        "intrebare": "Care dintre următoarele ingrediente NU este folosit în fabricarea ciocolatei?",
+        "variante": ["Unt de cacao", "Zahăr", "Lapte", "Miere"],
+        "corect": 3
+    },
+
+    {
+        "intrebare": "Care este cel mai popular tip de ciocolată?",
+        "variante": ["Ciocolată albă", "Ciocolată neagră", "Ciocolată cu lapte", "Ciocolată cu nuci"],
+        "corect": 2
+    },
+
+    {
+        "intrebare": "Ce substanță din ciocolată are potențialul de a stimula eliberarea endorfinelor și de a induce starea de fericire?",
+        "variante": ["Cafeina", "Teobromina", "Serotonina", "Dopamina"],
+        "corect": 1
+    }
+]
